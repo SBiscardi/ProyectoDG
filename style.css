@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+:root{
+    /*COLORES*/
+    --Uorang: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "poppins",sans-serif;
+    background-color: #18171d;
+    
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    background: linear-gradient(232deg, #201e1c, #f7931a);
+
+}
+
+.header--button{
+    position: absolute;
+    left: calc(50% - 118px);
+    top:780px;
+    display: block;
+    padding: 15px;
+    margin-top: 35px;
+    width: 350px;
+    height: 70px;
+    background-color: var(--off-white);
+    /*Sombras*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    /*fuentes de escritura*/
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.menu{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    color: #BA8250;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size:17px;
+    padding: 20px;
+    color: #DFDDE0;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #BA8250;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width:25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #DFDDE0;
+}
+
+.borrar{
+    background-color: #BAB250;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #DFDDE0;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-txt{
+    text-align: center;
+}
+
+.header-txt h1{
+    font-family: "Bebas Neve", sans serif;
+    font-size: 100px;
+    color: #838586;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: #DFDDE0;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+.header-txt img{
+    margin: auto;
+    width: 700px;
+    display: block;
+}
+
+.btn-1, .btn-2{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #BA8250;
+    color: #DFDDE0;
+    font-family: "Bebas Neve", sans-serif;
+    font-size: 20px;
+    margin-top: 55px;
+
+}
+
+.about{
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.about-img img{
+    width: 350px;
+}
+
+.about-txt{
+    flex-basis: 50%;
+}
+
+.about-txt h2{
+    color: #DFDDE0;
+    font-size: 80px;
+    font-family: "Nenas Neve",sans-serif;
+    margin-bottom: 15px;
+}
+
+.about-txt p{
+    font-size: 16px;
+    color: #DFDDE0;
+}
+
+.link h3{
+    font-size: 22px;
+}
+
+.link a{
+    font-size: 16px;
+    color: #c0c0c1;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link a:hover{
+    color:#BA8250 ;
+}
+
+.feature {
+    background: var(--dark-color);
+    padding: 5rem 0;
+  }
+
+
+/* Reglas */
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+
+}
+
+.product-detail--title{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    color: var(--just-white);
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--card{
+    min-width: 990px;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--warm-black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail--card .icon-card{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.limpieza-Y-Orden{
+ background-image: url("./icons/Limpieza\ del\ equipo\ Blanco.png");
+}
+
+.uso-Adecuado{
+    background-image: url("./icons/Uso\ del\ equipo\ Blanco.png");
+}
+.puntualidad{
+    background-image: url("./icons/");
+}
+.higenePersonal{
+    background-image: url("./icons/Higiene\ personal\ Blanco.png");
+}
+
+.product--card-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+
+}
+.product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+
+
+
+
+/* Carrousel */
+
+.wrapper {
+    aspect-ratio: 16/10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+    max-width: 2300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper i.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: #343f4f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+  }
+  i.button:active {
+    transform: scale(0.94) translateY(-50%);
+  }
+  i#prev {
+    left: 25px;
+  }
+  i#next {
+    right: 25px;
+  }
+  .image-container {
+    aspect-ratio: 16/9;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .image-container .carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  .carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    border: 10px solid #fff;
+    object-fit: cover;
+  }
+
+
+
+
+  /* Zonas del gym */
+.trainer-section{
+    background: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 100vh;
+}
+
+
+  .container_zona {
+    position: relative;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .container_zona .card {
+    background: #fff;
+    position: relative;
+    max-width: 300px;
+    height: 245px;
+    margin: 30px 70px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+
+  .container_zona .card:hover {
+    height: 300px;
+  }
+
+  .container_zona .card .imgBx {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    top: -60px;
+    left: 5px;
+    box-sizing: 0 5px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .container_zona .card .imgBx img {
+    max-width: 100%;
+    border-radius: 2px;
+  }
+
+  .container_zona .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+  }
+
+  .container_zona .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;
+  }
+
+
+  
+
+  
+@media(max-width:1200px){
+    .header-txt img {
+        margin: auto;
+     }
+
+}
+
+@media (max-width:1050px) {
+
+    .container_zona{
+        max-width: 800px;
+    }
+    
+    .product-detail--card{
+        min-width: 790px;
+    }
+}
+
+
+
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+
+    .product-detail--card{
+        min-width: 690px;
+    }
+
+
+    .menu label{
+        display: inline;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #18171D;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .logo{
+        display: none;
+    }
+
+    .submenu:hover #carrito{
+        min-width: 100%;
+    }
+
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+
+    .header-txt{
+        text-align: center;
+    }
+
+
+    .header-txt h1{
+        font-size: 90px;
+        line-height: 1;
+    }
+    .about{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img{
+        order: 2;
+    }
+
+    .about-img img{
+        width: 250px;
+    }
+
+    .wrapper{
+        aspect-ratio: 8/10;
+        
+    }
+
+}
+
+/* Tarjetas de presentación */
+
+
+
+
+
+

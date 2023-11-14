@@ -1,0 +1,142 @@
+:root{
+    --Uorang: #f7931a;
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+
+.container-category{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container-category label{
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-category label:hover{
+    opacity: 0.8;
+}
+
+.container-post{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.posts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.posts .post{
+    background: #fff;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.post .ctn-img{
+    width: 100%;
+}
+
+.post .ctn-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post h2{
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.post span{
+    display: block;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.ctn-tag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.ctn-tag li{
+    list-style: none;
+    font-size: 14px;
+    margin: 4px;
+    padding: 6px 10px;
+    background: #e8e8e8;
+    cursor: default;
+}
+
+.post button:hover{
+    opacity: 0.9;
+}
+
+
+/*sistema de filtrado*/
+
+[value="TODOS"]:checked ~ .posts .post[data-category]{
+    display: block;
+}
+
+[value="PECHO"]:checked ~ .posts .post:not([data-category~="PECHO"]),
+[value="ESPALDA"]:checked ~ .posts .post:not([data-category~="ESPALDA"]),
+[value="PIERNA"]:checked ~ .posts .post:not([data-category~="PIERNA"]),
+[value="HOMBRO"]:checked ~ .posts .post:not([data-category~="HOMBRO"]),
+[value="BICEP"]:checked ~ .posts .post:not([data-category~="BICEP"]),
+[value="ABDOMEN"]:checked ~ .posts .post:not([data-category~="ABDOMEN"]),
+[value="TRICEP"]:checked ~ .posts .post:not([data-category~="TRICEP"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="PECHO"]:checked ~ .container-category [for="PECHO"],
+[value="ESPALDA"]:checked ~ .container-category [for="ESPALDA"],
+[value="PIERNA"]:checked ~ .container-category [for="PIERNA"],
+[value="HOMBRO"]:checked ~ .container-category [for="HOMBRO"],
+[value="BICEP"]:checked ~ .container-category [for="BICEP"],
+[value="ABDOMEN"]:checked ~ .container-category [for="ABDOMEN"],
+[value="TRICEP"]:checked ~ .container-category [for="TRICEP"]{
+    background: var(--Uorang);
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px){
+    .posts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .posts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px){
+    .posts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
