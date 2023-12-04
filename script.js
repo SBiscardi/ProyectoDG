@@ -38,7 +38,6 @@ wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
 wrapper.addEventListener("mouseleave", autoSlide);
 
 
-
-// Slider entrenadores
+window.location.href = 'login.html'
 
 
