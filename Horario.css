@@ -80,13 +80,14 @@
 
     .schedule-table strong,
   .schedule-table span{
-    font-size: 12px;
+    font-size: 9px;
+    
   }
 
-  .schedule-table {
-    min-width: 700px;
-    overflow-x: auto;
+  .Title-calendar{
+    font-size: 10px;
   }
+
 
 
   }

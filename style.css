@@ -309,17 +309,18 @@ th, td{
 /* Carrousel */
 
 .wrapper {
-    aspect-ratio: 16/10;
+
+    aspect-ratio: 13/8;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
-    max-width: 2300px;
+    max-width: 1910px;
     width: 100%;
     align-items: center;
     justify-content: center;
     position: relative;
-    border-radius: 12px;
+    border-radius: 1px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
   .wrapper i.button {
@@ -467,13 +468,19 @@ th, td{
 
 
 
+@media(max-width:500px){
+.product-detail--card{
+    min-width: 400px;
+}
+}
+
 @media(max-width:991px){
     .menu{
         padding: 20px;
     }
 
     .product-detail--card{
-        min-width: 690px;
+        min-width: 490px;
     }
 
 
@@ -538,10 +545,6 @@ th, td{
     }
 
 }
-
-/* Tarjetas de presentación */
-
-
 
 
 
